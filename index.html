@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="background_styles.css">
+        <link rel="stylesheet" href="styles.css">
+        <title>Loading</title>
+        <link rel="icon" href="https://fav.farm/🔥" />
+
+        <style>
+           *, *::before, *::after {
+	box-sizing: border-box;
+}
+
+.spinner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+}
+
+.spinner-sector {
+    border-radius: 50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 15px solid transparent;
+    mix-blend-mode: overlay;
+}
+
+.spinner-text {
+    animation: loading-opacity 3s ease-in-out infinite;
+    font-size: 2em;
+}
+
+.spinner-sector-blue {
+    animation: rotate 2s ease-out infinite;
+    border-top: 15px solid lightblue;
+}
+
+.spinner-sector-red {
+    animation: rotate 2.5s ease-in infinite;
+    border-top: 15px solid lightcoral;
+}
+
+.spinner-sector-green {
+    animation: rotate 1.5s ease-in-out infinite;
+    border-top: 15px solid lightgreen;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes loading-opacity {
+    0%, 100% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: .5;
+    }
+    50% {
+        opacity: .1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Background Styles Only */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+    font-family: Raleway;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DFDFDF;
+}
+
+.side-links {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.side-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: white;
+  width: 180px;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+.side-link-youtube {
+  background-color: red;
+}
+
+.side-link-twitter {
+  background-color: #1DA1F2;
+}
+
+.side-link-github {
+  background-color: #6e5494;
+}
+
+.side-link-text {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.side-link-icon {
+  color: white;
+  font-size: 30px;
+} 
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.progress-bar {
+	position: relative;
+	width: 500px;
+	height: 3em;
+	background-color: #111;
+	border-radius: 1.5em;
+	color: white;
+}
+
+.progress-bar::before {
+	content: attr(data-label);
+	display: flex;
+	align-items: center;
+	position: absolute;
+	left: .5em;
+	top: .5em;
+	bottom: .5em;
+	width: calc(var(--width, 0) * 1%);
+	min-width: 2rem;
+	max-width: calc(100% - 1em);
+	background-color: #069;
+	border-radius: 1em;
+	padding: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Background Styles Only */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+    font-family: Raleway;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DFDFDF;
+}
+
+.side-links {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.side-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: white;
+  width: 180px;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+.side-link-youtube {
+  background-color: red;
+}
+
+.side-link-twitter {
+  background-color: #1DA1F2;
+}
+
+.side-link-github {
+  background-color: #6e5494;
+}
+
+.side-link-text {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.side-link-icon {
+  color: white;
+  font-size: 30px;
+}
+        </style>
+    </head>
+    <body>
+     <a href="https://akdavis83.github.io/Door/"> <div class="spinner">
+        <div class="spinner-text"> 
+            <div class="progress-bar" style="--width: 10" data-label="Loading..."></div>
+    </div>
+        <div class="spinner-sector spinner-sector-red"></div>
+        <div class="spinner-sector spinner-sector-blue"></div>
+        <div class="spinner-sector spinner-sector-green"></div>
+      </div></a>
+      
+      
+     
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <!-- Side Links Only -->
+      <div class="side-links">
+        <a href="https://akdavis83.github.io/Dots/" target="_blank" class="side-link side-link-youtube">
+          <i class="fab fa-youtube-square side-link-icon"></i>
+          <span class="side-link-text">DOTS</span>
+        </a>
+        <a href="https://akdavis83.github.io/Sep24/" target="_blank" class="side-link side-link-github side-link-icon">
+          <i class="fab fa-github-square"></i>
+          <span class="side-link-text">Blog</span>
+        </a>
+        <a href="https://akdavis83.github.io/Subscribe/" target="_blank" class="side-link side-link-twitter">
+          <i class="fab fa-twitter-square side-link-icon"></i>
+          <span class="side-link-text">Subscribe</span>
+        </a>
+      </div>
+      <script>
+        const progressBar = document.getElementsByClassName('progress-bar')[0]
+setInterval(() => {
+  const computedStyle = getComputedStyle(progressBar)
+  const width = parseFloat(computedStyle.getPropertyValue('--width')) || 0
+  progressBar.style.setProperty('--width', width + .1)
+}, 5)
+      </script>
+    </body>
+</html>
